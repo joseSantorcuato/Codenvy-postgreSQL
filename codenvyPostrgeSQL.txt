@@ -1,0 +1,19 @@
+INSTALACIÓN POSTGRESQL CODENVY
+JOSÉ SANTORCUATO TAPIA
+santorcuato76@gmail.com
+Chile 2017
+
+
+psql: could not connect to server: No such file or directory
+    Is the server running locally and accepting
+    connections on Unix domain socket"/var/pgsql_socket/.s.PGSQL.5432"?
+
+sudo apt-get install postgresql postgresql-contrib libpq-dev
+
+sudo service postgresql start
+
+sudo -u postgres createuser -s claudpg
+
+sudo -u postgres psql
+
+\password
